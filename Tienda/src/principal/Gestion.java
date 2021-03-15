@@ -14,6 +14,7 @@ public class Gestion {  // Declaración de la clase.
 	
 	public Gestion() {
 	}
+	
 	public Gestion(Producto[] productos) {
 		this.productos = productos;
 	}
@@ -28,6 +29,7 @@ public class Gestion {  // Declaración de la clase.
 
 	public void mostrarProductos(Producto[] productos) {
 		for (int i = 0; i < productos.length; i++) {
+			// productos[i] aquí esta obteniendo productos[i].toString()
 			System.out.print(productos[i] + "\n-------\n");
 		}
 	}

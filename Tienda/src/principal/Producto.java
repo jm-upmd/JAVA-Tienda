@@ -1,6 +1,6 @@
 package principal;
 
-public  class Producto {
+public class Producto {
 
 	// Attributes
 	private String nombre;
@@ -30,14 +30,14 @@ public  class Producto {
 	// Methods
 	@Override
 	public String toString() {
-		return "Nombre: " + this.getNombre() + "\n" + "Precio unidad: "
-				+ this.getPrecioUnit() + " €\n" + "En Stock: "
-				+ this.getCantStock() + "\n";
+		return "Nombre: " + getNombre() + "\n" + "Precio unidad: "
+				+ getPrecioUnit() + " €\n" + "En Stock: "
+				+ getCantStock() + "\n";
 	}
 
 	// Get and Set
 	public String getNombre() {
-		return this.nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
@@ -45,7 +45,7 @@ public  class Producto {
 	}
 
 	public double getPrecioUnit() {
-		return this.precioUnit;
+		return precioUnit;
 	}
 
 	public void setPrecioUnit(double precioUnit) {
@@ -53,7 +53,7 @@ public  class Producto {
 	}
 
 	public int getCantStock() {
-		return this.cantStock;
+		return cantStock;
 	}
 
 	public void setCantStock(int cantStock) {
@@ -62,8 +62,8 @@ public  class Producto {
 
 	public boolean isDisponible() {
 		if (getCantStock() > 0)
-			this.disponible = true;
-		return this.disponible;
+			disponible = true;
+		return disponible;
 	}
 
 	public void setDisponible(boolean disponible) {
